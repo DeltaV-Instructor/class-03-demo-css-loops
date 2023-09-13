@@ -229,8 +229,37 @@ if(a && emptyObject){
 let foodsILike = ['tatertots', 'chips', 'popcorn', 'pizza'];
 console.log(foodsILike);
 
-
+// 3 things set variable , set condition, increment the variable.
 for(let i = 0; i < foodsILike.length; i++){
   //        array name and then [index that gives us the element]
   console.log('do we get food?', foodsILike[i]);
 }
+//array. method(value as an argument.)
+foodsILike.push('swiss chard');
+
+console.log(foodsILike);
+
+//remove an element from our array with pop()
+
+foodsILike.pop();
+console.log('pop',foodsILike);
+
+// gets from the front of an array.
+let shiftArray = foodsILike.shift();
+console.log('shift array',shiftArray);
+
+
+foodsILike.unshift('spinach');
+
+console.log('un shift', foodsILike);
+
+
+let index = foodsILike.indexOf('popcorn');
+
+console.log('is this 2?',index);
+
+
+
+// yes, js lets you do this (having an array of different data types). don't do it.
+let mixedUpArray = ['yeehaw', 42, true, ['yo', 5], {}];
+console.log('mixedUpArray ', mixedUpArray);
